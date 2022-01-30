@@ -26,10 +26,7 @@ pipeline {
         stage('编译代码') {
             steps {
                 echo "开始进行编译..."
-                //sh '''
-                //npm install --unsafe-perm --registry https://registry.npm.taobao.org
-                //npm run build
-                //'''
+                sh " mvn clean -Dmaven.test.skip=true package -pl ${imageName} -am "
                 echo "编译操作结束..."
             }
         }
