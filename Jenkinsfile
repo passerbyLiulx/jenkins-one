@@ -26,7 +26,7 @@ pipeline {
         stage('编译代码') {
             steps {
                 echo "开始进行编译..."
-                sh " mvn clean -Dmaven.test.skip=true"
+                //sh " mvn clean -Dmaven.test.skip=true"
                 echo "编译操作结束..."
             }
         }
