@@ -2,7 +2,7 @@ def id = "6c8c156b-55a8-4564-bc61-4776377d9104"
 def gitUrl = "https://github.com/passerbyLiulx/jenkins-one.git"
 def branch = "main"
 
-def dockerUrl = "182.92.173.125"
+def dockerUrl = "182.92.173.125:8081"
 def dockerUserName = "admin"
 def dockerPassword = "admin@123"
 def dockerNameSpace = "testOne"
